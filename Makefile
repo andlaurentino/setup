@@ -1,3 +1,12 @@
+ifeq ($(OS),Windows_NT)     # is Windows_NT on XP, 2000, 7, Vista, 10...
+    detected_OS := Windows
+else
+    detected_OS := $(shell uname)  # same as "uname -s"
+endif
+
+os:
+	echo $(detected_OS)
+
 machintosh-brew-install:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
