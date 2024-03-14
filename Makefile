@@ -7,6 +7,11 @@ endif
 os:
 	echo $(detected_OS)
 
+copy-current-files:
+	cp ~/.zshrc ./dotfiles/
+	cp ~/.p10k.zsh ./dotfiles/
+	cp ~/.tmux.conf ./dotfiles/
+
 machintosh-brew-install:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -25,6 +30,8 @@ oh-my-zsh:
 	cp dotfiles/.zshrc ~/.zshrc
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	cp dotfiles/.p10k.zsh ~/.p10k.zsh
+	git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 machintosh-install: machintosh-brew-install machintosh-install-dependencies oh-my-zsh neovim-configure
 
