@@ -24,3 +24,6 @@ iterm2
 visual-studio-code
 hiddenbar
 rectangle
+arc
+google-chrome
+notion
