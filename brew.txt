@@ -23,3 +23,4 @@ scala@2.12
 iterm2
 visual-studio-code
 hiddenbar
+rectangle
