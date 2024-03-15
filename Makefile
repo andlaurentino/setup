@@ -12,13 +12,21 @@ copy-current-files:
 	cp ~/.p10k.zsh ./dotfiles/
 	cp ~/.tmux.conf ./dotfiles/
 
+install-current-files:
+	cp ./dotfiles/.zshrc ~/
+	cp ./dotfiles/.p10k.zsh ~/
+	cp ./dotfiles/.tmux.conf ~/
+
 machintosh-brew-install:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-machintosh-install-dependencies:
+machintosh-install-dependencies-old:
 	brew install git zsh neovim wget
 	brew install qemu colima docker docker-completion docker-compose kubernetes-cli helm terraform terragrunt
 	brew install go node yarn rustup-init python@3.12 openjdk@11 maven sbt scala@2.12
+
+machintosh-install-dependencies:
+	xargs brew install < brew.txt
 
 neovim-configure:
 	mv ~/.config/nvim{,.bak}
