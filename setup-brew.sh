@@ -4,4 +4,4 @@ then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-xargs brew install < dependencies/brew.txt
+xargs /opt/homebrew/bin/brew install < dependencies/brew.txt
