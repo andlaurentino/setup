@@ -19,6 +19,7 @@ install-current-files:
 
 machintosh-install:
 	sh ./setup-brew.sh
+	sh ./setup-nerd-fonts.sh
 	sh ./setup-omz.sh
 	sh ./setup-neovim.sh
 	sh ./setup-tmux.sh

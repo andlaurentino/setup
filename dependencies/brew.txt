@@ -1,6 +1,7 @@
 git
 zsh
 neovim
+temux
 wget
 qemu
 colima
