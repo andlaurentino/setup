@@ -566,7 +566,7 @@
   ###################[ command_execution_time: duration of the last command ]###################
   # Execution time color.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="#000"
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="#fff"
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="#ccc"
   # Show duration of the last command if takes at least this many seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
   # Show this many fractional digits. Zero means round to seconds.
@@ -1762,6 +1762,7 @@
   #   ----------------------+---------------
   #   P9K_WIFI_SSID         | service set identifier, a.k.a. network name
   #   P9K_WIFI_LINK_AUTH    | authentication protocol such as "wpa2-psk" or "none"; empty if unknown
+  #
   #   P9K_WIFI_LAST_TX_RATE | wireless transmit rate in megabits per second
   #   P9K_WIFI_RSSI         | signal strength in dBm, from -120 to 0
   #   P9K_WIFI_NOISE        | noise in dBm, from -120 to 0
@@ -1769,8 +1770,8 @@
 
   ####################################[ time: current time ]####################################
   # Current time color.
-  typeset -g POWERLEVEL9K_TIME_FOREGROUND=0
-  typeset -g POWERLEVEL9K_TIME_BACKGROUND=7
+  typeset -g POWERLEVEL9K_TIME_FOREGROUND="#000000"
+  typeset -g POWERLEVEL9K_TIME_BACKGROUND="#ffffff"
   # Format for the current time: 09:51:02. See `man 3 strftime`.
   typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
   # If set to true, time will update when you hit enter. This way prompts for the past
