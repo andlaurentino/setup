@@ -25,3 +25,4 @@ machintosh-install:
 	sh ./setup-omz.sh
 	sh ./setup-neovim.sh
 	sh ./setup-tmux.sh
+	sh ./setup-kitty.sh
