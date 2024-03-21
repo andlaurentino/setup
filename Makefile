@@ -11,11 +11,13 @@ copy-current-files:
 	cp ~/.zshrc ./dotfiles/
 	cp ~/.p10k.zsh ./dotfiles/
 	cp ~/.tmux.conf ./dotfiles/
+	cp ~/.config/kitty/kitty.conf ./dotfiles/
 
 install-current-files:
 	cp ./dotfiles/.zshrc ~/
 	cp ./dotfiles/.p10k.zsh ~/
 	cp ./dotfiles/.tmux.conf ~/
+	cp ./dotfiles/kitty.conf ~/.config/kitty/
 
 machintosh-install:
 	sh ./setup-brew.sh
