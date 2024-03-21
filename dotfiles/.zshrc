@@ -9,4 +9,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+export TERM=xterm-256color
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
