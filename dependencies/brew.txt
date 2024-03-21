@@ -12,6 +12,7 @@ kubernetes-cli
 helm
 terraform
 terragrunt
+lua
 go
 node
 yarn
