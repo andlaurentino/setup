@@ -30,3 +30,4 @@ rectangle
 arc
 google-chrome
 notion
+bat
