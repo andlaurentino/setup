@@ -26,3 +26,4 @@ machintosh-install:
 	sh ./setup-neovim.sh
 	sh ./setup-tmux.sh
 	sh ./setup-kitty.sh
+	sh ./setup-touchid-term.sh
