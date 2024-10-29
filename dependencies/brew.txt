@@ -23,6 +23,7 @@ maven
 sbt
 scala@2.12
 kitty
+alacritty
 iterm2
 visual-studio-code
 hiddenbar

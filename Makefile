@@ -12,12 +12,14 @@ copy-current-files:
 	cp ~/.p10k.zsh ./dotfiles/
 	cp ~/.tmux.conf ./dotfiles/
 	cp ~/.config/kitty/kitty.conf ./dotfiles/
+	cp ~/.config/kitty/kitty.conf ./dotfiles/
 
 install-current-files:
 	cp ./dotfiles/.zshrc ~/
 	cp ./dotfiles/.p10k.zsh ~/
 	cp ./dotfiles/.tmux.conf ~/
 	cp ./dotfiles/kitty.conf ~/.config/kitty/
+	cp ./dotfiles/alacritty/alacritty.toml ~/.config/alacritty/
 
 machintosh-install:
 	sh ./setup-brew.sh
@@ -26,4 +28,5 @@ machintosh-install:
 	sh ./setup-neovim.sh
 	sh ./setup-tmux.sh
 	sh ./setup-kitty.sh
+	sh ./setup-alacritty.sh
 	sh ./setup-touchid-term.sh
