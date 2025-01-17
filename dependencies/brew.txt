@@ -1,5 +1,6 @@
 git
 zsh
+starship
 neovim
 temux
 wget

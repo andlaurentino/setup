@@ -1,0 +1,201 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](color_default_bg)\
+$os\
+$username\
+[](bg:color_dir_bg fg:color_default_bg)\
+$directory\
+[](fg:color_dir_bg bg:color_svm_bg)\
+$git_branch\
+$git_status\
+[](fg:color_svm_bg bg:color_context_bg)\
+$docker_context\
+$conda\
+[](fg:color_context_bg bg:color_time_bg)\
+$time\
+[ ](fg:color_time_bg)\
+$line_break$character"""
+
+# [](fg:color_svm_bg bg:color_lang_bg)\
+# $c\
+# $rust\
+# $golang\
+# $nodejs\
+# $php\
+# $java\
+# $kotlin\
+# $haskell\
+# $python\
+# $dotnet\
+# [](fg:color_lang_bg bg:color_context_bg)\
+
+palette = "blue"
+
+[palettes.main]
+color_default_fg = '#ffffff'
+color_default_bg = "#0f3e8a"
+color_dir_bg = "#1478b7"
+color_dir_fg = "#ffffff"
+color_svm_bg = "#7dcfff"
+color_svm_fg = "#000000"
+color_lang_bg = "#ffc777"
+color_lang_fg = "#000000"
+color_context_bg = "#b4f9f8"
+color_context_fg = "#000000"
+color_time_bg = "#1f2335"
+color_time_fg = "#ffffff"
+
+[palettes.dark_green]
+color_default_fg = '#ffffff'
+color_default_bg = "#344e41"
+color_dir_bg = "#3a5a40"
+color_dir_fg = "#ffffff"
+color_svm_bg = "#588157"
+color_svm_fg = "#fffffff"
+color_lang_bg = "#a3b18a"
+color_lang_fg = "#000000"
+color_context_bg = "#dad7cd"
+color_context_fg = "#000000"
+color_time_bg = "#1f2335"
+color_time_fg = "#ffffff"
+
+[palettes.blue]
+color_default_fg = '#ffffff'
+color_default_bg = "#1f2335"
+color_dir_bg = "#007ea7"
+color_dir_fg = "#ffffff"
+color_svm_bg = "#80ced7"
+color_svm_fg = "#000000"
+color_lang_bg = "#9ad1d4"
+color_lang_fg = "#ffffff"
+color_context_bg = "#ccdbdc"
+color_context_fg = "#ffffff"
+color_time_bg = "#1f2335"
+color_time_fg = "#ffffff"
+
+[os]
+disabled = false
+style = "bg:color_default_bg fg:color_default_fg"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵 "
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[username]
+show_always = false
+style_user = "bg:color_default_bg fg:color_default_fg"
+style_root = "bg:color_default_bg fg:color_default_fg"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_dir_fg bg:color_dir_bg"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_svm_bg"
+format = '[[ $symbol $branch ](fg:color_svm_fg bg:color_svm_bg)]($style)'
+
+[git_status]
+style = "bg:color_svm_bg"
+format = '[[($all_status$ahead_behind )](fg:color_svm_fg bg:color_svm_bg)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[java]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[dotnet]
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[terraform]
+style = "bg:color_lang_bg"
+format = '[[ $symbol( $version) ](fg:color_lang_fg bg:color_lang_bg)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_context_bg"
+format = '[[ $symbol( $context) ](fg:#color_context_fg bg:color_context_bg)]($style)'
+
+[conda]
+style = "bg:color_context_bg"
+format = '[[ $symbol( $environment) ](fg:color_context_fg bg:color_context_bg)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_time_bg"
+format = '[[  $time ](fg:color_time_fg bg:color_time_bg)]($style)'
+
+[line_break]
+disabled = false
