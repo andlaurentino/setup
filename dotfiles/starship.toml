@@ -1,9 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """
-[](color_default_bg)\
+format = """[](color_default_bg)\
 $os\
-$username\
+[ghost ](bg:color_default_bg fg:color_default_fg)\
 [](bg:color_dir_bg fg:color_default_bg)\
 $directory\
 [](fg:color_dir_bg bg:color_svm_bg)\
@@ -61,8 +60,8 @@ color_time_bg = "#1f2335"
 color_time_fg = "#ffffff"
 
 [palettes.blue]
-color_default_fg = '#ffffff'
-color_default_bg = "#1f2335"
+color_default_fg = '#a9b1d6'
+color_default_bg = "#292e42" # 1f2335
 color_dir_bg = "#007ea7"
 color_dir_fg = "#ffffff"
 color_svm_bg = "#80ced7"
@@ -71,8 +70,8 @@ color_lang_bg = "#9ad1d4"
 color_lang_fg = "#ffffff"
 color_context_bg = "#ccdbdc"
 color_context_fg = "#ffffff"
-color_time_bg = "#1f2335"
-color_time_fg = "#ffffff"
+color_time_bg = "#292e42"
+color_time_fg = "#a9b1d6"
 
 [os]
 disabled = false
