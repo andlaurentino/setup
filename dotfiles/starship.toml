@@ -8,15 +8,12 @@ $directory\
 [](fg:color_dir_bg bg:color_svm_bg)\
 $git_branch\
 $git_status\
-[](fg:color_svm_bg bg:color_context_bg)\
-$docker_context\
-$conda\
-[](fg:color_context_bg bg:color_time_bg)\
+[](fg:color_svm_bg bg:color_time_bg)\
 $time\
 [ ](fg:color_time_bg)\
 $line_break$character"""
 
-# [](fg:color_svm_bg bg:color_lang_bg)\
+# [](fg:color_svm_bg bg:color_lang_bg)\
 # $c\
 # $rust\
 # $golang\
@@ -28,6 +25,11 @@ $line_break$character"""
 # $python\
 # $dotnet\
 # [](fg:color_lang_bg bg:color_context_bg)\
+
+# [](fg:color_svm_bg bg:color_context_bg)\
+# $docker_context\
+# $conda\
+
 
 palette = "blue"
 
@@ -108,7 +110,7 @@ format = '[ $user ]($style)'
 
 [directory]
 style = "fg:color_dir_fg bg:color_dir_bg"
-format = "[ $path ]($style)"
+format = "[[ $path ](fg:color_dir_fg bg:color_dir_bg)]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
