@@ -17,6 +17,8 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 source ~/.variables.sh
 
+export PATH="$PATH:/usr/local/share/dotnet"
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/andersonlaurentino/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

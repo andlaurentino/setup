@@ -14,6 +14,7 @@ copy-current-files:
 	cp ~/.tmux.conf ./dotfiles/
 	cp ~/.config/kitty/kitty.conf ./dotfiles/
 	cp ~/.config/kitty/kitty.conf ./dotfiles/
+	cp ~/.ideavimrc ./dotfiles/
 
 install-current-files:
 	cp ./dotfiles/.zshrc ~/
