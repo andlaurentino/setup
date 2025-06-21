@@ -23,6 +23,7 @@ install-current-files:
 	cp ./dotfiles/.tmux.conf ~/
 	cp ./dotfiles/kitty.conf ~/.config/kitty/
 	cp ./dotfiles/alacritty/alacritty.toml ~/.config/alacritty/
+	cp ./dotfiles/.ideavimrc ~/
 
 machintosh-install:
 	sh ./setup-brew.sh
