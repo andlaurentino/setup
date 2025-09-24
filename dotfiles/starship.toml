@@ -8,7 +8,10 @@ $directory\
 [](fg:color_dir_bg bg:color_svm_bg)\
 $git_branch\
 $git_status\
-[](fg:color_svm_bg bg:color_time_bg)\
+[](fg:color_svm_bg bg:color_empty1_bg)\
+[ ](fg:color_svm_bg bg:color_empty1_bg)\
+[](fg:color_empty1_bg bg:color_empty2_bg)\
+[](fg:color_empty2_bg bg:color_time_bg)\
 $time\
 [ ](fg:color_time_bg)\
 $line_break$character"""
@@ -31,7 +34,7 @@ $line_break$character"""
 # $conda\
 
 
-palette = "blue"
+palette = "cotton_candy"
 
 [palettes.main]
 color_default_fg = '#ffffff'
@@ -74,6 +77,20 @@ color_context_bg = "#ccdbdc"
 color_context_fg = "#ffffff"
 color_time_bg = "#292e42"
 color_time_fg = "#a9b1d6"
+
+[palettes.cotton_candy]
+color_default_fg = "#e5e5f7"
+color_default_bg = "#2c2541"
+color_dir_bg = "#f2a272"
+color_dir_fg = "#2c2541"
+color_svm_bg = "#a6e3a1"
+color_svm_fg = "#2c2541"
+color_empty1_bg = "#89dceb"
+# color_empty1_fg = "#2c2541"
+color_empty2_bg = "#88b0f0"
+# color_empty2_fg = "#2c2541"
+color_time_fg = "#e5e5f7"
+color_time_bg = "#2c2541"
 
 [os]
 disabled = false
