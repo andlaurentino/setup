@@ -1,0 +1,110 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontLigatures": true,
+    "scm.inputFontSize": 14,
+    "editor.fontSize": 17,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "vscode_vibrancy.opacity": 0.1,
+    "vscode_vibrancy.refreshInterval": 100,
+    "powermode.enabled": true,
+    "powermode.combo.location": "off",
+    "powermode.shake.enabled": false,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.fontFamily": "'JetBrains Mono', 'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 14,
+    "vim.useSystemClipboard": true,
+    "vim.enableNeovim": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<S-tab>"],
+            "commands": [":tabprev"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "|"
+            ],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        {
+            "before": [
+                "-"
+            ],
+            "commands": [
+                "workbench.action.splitEditorOrthogonal"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        }
+    ],
+    "powermode.presets": "flames",
+    "editor.minimap.autohide": true,
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "vim.neovimPath": "/opt/homebrew/bin/nvim",
+    "vim.neovimConfigPath": "/Users/andersonlaurentino/.config/nvim",
+    "vim.neovimUseConfigFile": true,
+    "go.toolsManagement.autoUpdate": true,
+    "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000"
+    },
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.colorCustomizations"
+    ],
+    "makefile.configureOnOpen": false,
+    "workbench.statusBar.visible": true,
+    "workbench.sideBar.location": "right",
+    "dotnet.server.componentPaths": {
+
+    },
+    "[csharp]": {
+        "editor.maxTokenizationLineLength": 2500
+    },
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "notebook.output.textLineLimit": 300
+}
